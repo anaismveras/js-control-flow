@@ -5,7 +5,16 @@ let helloWorldDifLang = {
     hindi: "नमस्ते दुनिया"
   };
   
-  for (let languages in helloWorldDifLang) {
-    console.log (helloWorldDifLang[languages])
+const languages = 'ES'
+
+if (languages.toLowerCase() == 'en') {
+  console.log('Hello World')
+} else if (languages.toLowerCase() == 'es') {
+  console.log('Hola Mundo')
+} else if (languages.toLowerCase() == 'de') {
+  console.log('Hallo Welt')
+} else if (languages.toLocaleLowerCase() == 'hd') {
+  console.log("नमस्ते दुनिया") 
+} else {
+  console.log('Please enter either Enlish, Spanish, German or Hindi')
   }
-  
